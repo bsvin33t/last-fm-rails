@@ -1,0 +1,6 @@
+<div class="panel panel-default">
+  <div class="panel-heading">Search Result</div>
+  <div class="panel-body">
+    <%= render partial: 'shared/similar_artists', collection: ArtistsDecorator.new(@artists).artist_set, as: :artist_set %>
+  </div>
+</div>

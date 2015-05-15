@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adwyze</title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class='container'>
+
+<%= render partial: 'shared/navbar' %>
+
+<div class="panel panel-default">
+  <div class="panel-heading">History</div>
+  <div class="panel-body">
+    <ul class="list-group">
+      <%= render :partial => 'shared/search_history', :collection => current_user.search_histories, as: :search_item %>
+    </ul>
+  </div>
+</div>
+
+<%= yield %>
+
+</body>
+</html>

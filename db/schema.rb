@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150513163028) do
+ActiveRecord::Schema.define(version: 20150514161216) do
+
+  create_table "search_histories", force: :cascade do |t|
+    t.string   "search_string"
+    t.integer  "user_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.datetime "created_at",                          null: false

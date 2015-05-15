@@ -1,0 +1,12 @@
+<div class="row">
+  <% artist_set.each do |artist| %>
+      <div class="col-xs-12 col-md-4">
+        <div href="#" class="thumbnail">
+          <%= image_tag(ArtistDecorator.new(artist).image) %>
+          <div class="caption">
+            <b><%= ArtistDecorator.new(artist).name %></b>
+          </div>
+        </div>
+      </div>
+  <% end %>
+</div>

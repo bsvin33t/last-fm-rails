@@ -1,0 +1,8 @@
+development:
+  last_fm_api_key: key
+
+test:
+  last_fm_api_key: key
+
+production:
+  last_fm_api_key: key
