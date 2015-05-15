@@ -1,6 +1,3 @@
-require 'rspec/core/rake_task'
-require 'simplecov'
-
 namespace :coverage do
   desc 'General Coverage'
   task :all do
